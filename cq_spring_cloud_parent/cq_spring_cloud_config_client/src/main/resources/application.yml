@@ -1,0 +1,9 @@
+server:
+  port: 13000
+spring:
+  application:
+    name: spring-cloud-config-client
+  cloud:
+    config:
+      label: master
+      uri: http://localhost:11000/

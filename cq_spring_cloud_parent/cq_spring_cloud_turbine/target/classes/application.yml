@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-cloud-turbine
+
+server:
+  port: 11000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7000/eureka/
+  instance:
+    prefer-ip-address: true
+
+
+turbine:
+  app-config: SPRING-CLOUD-CONSUMMER
+  clusterNameExpression: new String("default")

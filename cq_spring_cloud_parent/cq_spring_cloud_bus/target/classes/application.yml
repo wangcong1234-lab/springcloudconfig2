@@ -1,0 +1,16 @@
+server:
+  port: 12000
+
+spring:
+  application:
+    name: spring-cloud-bus
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7000/eureka/
